@@ -6,7 +6,7 @@
   <meta name="description" content="Cheatsheet for foundation5 - The most advanced responsive front-end framework in the world. This is the latest version of cheatsheet!">
   <meta name="keywords" content="foundation, zurb, cheat sheet, cheat, code, help, copy paste, learn, great cheat sheet, copy and paste">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foundation CheatSheet</title>
+  <title>Foundtion 5 - breviario</title>
   <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/foundation.css" />
@@ -18,8 +18,8 @@
   <!--header-->
   <div class="row collapse cover fullwidth">
     <div class="small-8 medium-6 columns">
-      <h2>Foundation-5<small> Cheat sheet</small></h2>
-      <span class="fork"><a href="https://github.com/sudheerDev/CheatSheet" target="_blank">Fork me on github</a><img class="git" src="img/github.png"></span>
+      <h2>Foundation-5<small> - breviario</small></h2>
+      <span class="fork"><a href="https://github.com/buseca/Foundation5CheatSheet" target="_blank">Forked on github</a><img class="git" src="img/github.png"></span>
 
     </div>
 
@@ -30,34 +30,52 @@
   <!--row for defalut colors-->
   <div class="row">
      <div class="small-12 columns">
-             <h3>Default colors</h3>
+             <h3>Colori di sistema</h3> 
+             <p>
+              Questi colori si impostano al momento del <a href="http://foundation.zurb.com/develop/download.html#customizeFoundation">download</a> e vengono automaticamente implementati negli elementi dell'interfaccia (la GUI).
+             </p>
      </div>
        <div class="small-12 columns content">
         <ul class="small-block-grid-3 large-block-grid-6">
           <li class="primary-color">Primary
             <br>#2ba6cb
+            <br><label class="info">utilizzato per tasti, link e labels</label>
           </li>
           <li class="secondary-color">Secondary
-            <br>#e9e9e9</li>
+            <br>#e9e9e9
+            <br><label class="info">utilizzato spesso come colore di sfondo</label>
+          </li>
           <li class="alert-color">Alert
-            <br>#f04124</li>
+            <br>#f04124
+            <br><label class="info">utilizzato per i messaggi di errore</label>
+          </li>
           <li class="success-color">Success
-            <br>#43ac6a</li>
+            <br>#43ac6a
+            <br><label class="info">utilizzato per i messaggi di notifica</label>
+          </li>
           <li class="bodyfont-color">Body Font
-            <br>#222222</li>
+            <br>#222222
+            <br><label class="info">il colore del testo</label>
+          </li>
           <li class="headerfont-color">Header Font
-            <br>#222222</li>
+            <br>#222222
+            <br><label class="info">il colore dei titoli</label>
+          </li>
         </ul>
         </div>
       </div>
     <!--Strucure panel row-->
   <div class="row">
     <div class="small-12 columns">
-      <h3>Structure</h3>
+      <h3>Strutture di layout</h3>
     </div>
     <div class="small-12 columns content structure-panel">
       <div class="small-12 columns">
         <h4>Media Queries</h4>
+        <div class="small-12 medium-12 large-12 columns">
+          <label class="info">mediaqueries per determinare regole css diverse a seconda della larghezza della finestra</label>
+          <br>
+        </div>
         <div class="small-12 medium-6 large-4 columns">
           <ul class="no-bullet">
             <li><span data-tooltip class="has-tip" title="mobile styles"> @media only screen { }</span>
@@ -97,7 +115,9 @@
       </div>
     
         <div class="small-12 medium-4 columns">
-          <h4>Basic</h4>
+          <h4>Classi base</h4>
+          <label class="info"><code>.large-6</code> , classe per determinare la larghezza delle columns che si trovano all'interno di una <code>.row</code></label>
+          <br>
           <ul class="no-bullet">
             <li><span data-tooltip class="has-tip" title="6-columns on all screens">div class="small-6 columns" </span>
             </li>
@@ -108,7 +128,9 @@
           </ul>
         </div>
         <div class="small-12 medium-4 columns">
-          <h4>Offsets</h4>
+          <h4>Offset</h4>
+          <label class="info"><code>.large-offset-2</code> , classe per forzare la column a spostarsi 2 colonne più a destra</label>
+          <br>
           <ul class="no-bullet">
             <li><span data-tooltip class="has-tip" title="2-column offset on all screens">div class="small-10 small-offset-2 medium-6 columns"</span>
             </li>
@@ -117,21 +139,21 @@
           </ul>
         </div>
         <div class="small-12 medium-4 columns">
-          <h4>Incomplete Rows</h4>
-          <p>your row doesn't have a count that adds up to 12 columns, you can add class <code>end</code> to ovveride default behaviour of last column floating to right</p>
+          <h4>L'ultima columns</h4>
+          <label class="info"><code>.end</code> , classe per forzare la column a flottare verso sinistra; l'ultima columns infatti ha "float: right" per default</label>
+          <br>
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="new row">div class="row"</span>
-            </li>
             <li><span data-tooltip class="has-tip" title="medium-3 columns">div class="medium-3 columns"</span>
             </li>
             <li><span data-tooltip class="has-tip" title="stacks next to previous previous column">div class="medium-3 columns end"</span>
             </li>
           </ul>
-
         </div>
+        <div class="clearer"></div>
         <div class="small-12 medium-4 columns">
-          <h4>Centered Columns</h4>
-
+          <h4>Centrare le Columns</h4>
+          <label class="info"><code>.large-centered</code> , classe per allineare una columns al centro</label>
+          <br>
           <ul class="no-bullet">
             <li><span data-tooltip class="has-tip" title="10-columns centered on all screens">div class="small-10 small-centered columns"</span>
             </li>
@@ -142,7 +164,10 @@
           </ul>
         </div>
         <div class="small-12 medium-4 columns">
-          <h4>Source Rendering</h4>
+          <h4>Invertire 2 colonne</h4>
+          <label class="info"><code>.large-push-6</code> , classe per spingere una column 6 colonne più a destra</label>
+          <label class="info"><code>.large-pull-6</code> , classe per tirare l'altra column 6 coonne più a sinistra</label>
+          <br>
           <ul class="no-bullet">
             <li><span data-tooltip class="has-tip" title="push 3 columns on large screens">div class="large-9 large-push-3 columns"</span>
             </li>
@@ -154,7 +179,8 @@
         </div>
         <div class="small-12 medium-4 columns">
           <h4>Block Grid</h4>
-          <p>Evenly split the contents of a list within the grid</p>
+          <label class="info"><code>.large-block-grid-4</code> , classe per allineare orizzontalmente gli elementi di una lista e distribuirli in larghezza</label>
+          <br>
           <ul class="no-bullet">
             <li><span data-tooltip class="has-tip" title="2 evenly spaced columns on all screens">ul class="small-block-grid-2"</span>
             </li>
@@ -170,11 +196,11 @@
   <!--visibility classes-->
   <div class="row">
     <div class="small-12 columns">
-      <h3>Visibilty Classes</h3>
+      <h3>Classi di visibilità</h3>
     </div>
     <div class="small-12 columns content visibilty-panel">
       <div class="small-12 medium-6 large-3 columns">
-        <h4>Show Classes</h4>
+        <h4>Mostrare in base a risoluzione</h4>
         <ul class="no-bullet">
           <li><span data-tooltip class="has-tip" title="shown only on a small screen">class="show-for-small-only"</span>
           </li>
@@ -195,7 +221,7 @@
         </ul>
       </div>
       <div class="small-12 medium-6 large-3 columns">
-        <h4>Hide Classes</h4> 
+        <h4>nascondere in base a risoluzione</h4> 
         <ul class="no-bullet">
           <li><span data-tooltip class="has-tip" title="hide only on a small screen">class="hide-for-small-only"</span>
           </li>
@@ -216,14 +242,14 @@
         </ul>
       </div>
       <div class="small-12 medium-6 large-3 columns">
-        <h4>Orientation Detection</h4>
+        <h4>Mostrare in base a orientamento</h4>
         <ul class="no-bullet">
           <li><span data-tooltip class="has-tip" title="shown only in landscape mode">class="show-for-landscape"</span>
           </li>
           <li><span data-tooltip class="has-tip" title="shown only in portrait mode">class="show-for-portrait"</span>
           </li>
         </ul>
-        <h4>Touch Detection</h4>
+        <h4>mostrare/nascondere per touch</h4>
         <ul class="no-bullet">
           <li><span data-tooltip class="has-tip" title="show on touch-enabled device">class="show-for-touch"</span>
           </li>
@@ -232,8 +258,9 @@
         </ul>
       </div>
       <div class="small-12 medium-6 large-3 columns">
-        <h4>Accessibility</h4>
-        <p>If you want to hide some content but still make it accessible for screen readers, use the hidden visibility classes.To reverse the rules defined by hidden, use the visible visibility classes.</p>
+        <h4>Accessibilità</h4>
+        <label class="info">Per nascondere un elemento alla vista ma lasciarlo visibile per gli screen readers, utilizzare una classe come <code>.hidden-for-large-only</code>. Per annullare la regola utilizzare la classe <code>.visible-for-large-only</code></label>
+        <br>
         <ul class="no-bullet">
           <li><span data-tooltip class="has-tip" title="hidden on small screens but accessible on all screens">class="hidden-for-small-only"</span>
           </li>
@@ -247,36 +274,36 @@
   <!--Buttons panel-->
   <div class="row">
     <div class="small-12 columns">
-      <h3>Buttons</h3>
+      <h3>Tasti</h3>
     </div>
     <div class="small-12 columns content button-panel">
      <!--basic buttons-->
       <div class="small-12 columns">
-      <h4>Basic</h4>
+      <h4>Tasti base</h4>
       <div class="small-12 large-6 columns sub-content">
 
         <div class="small-6 columns">
-          <a href="#" class="button tiny">Tiny Button</a>
+          <a href="#" class="button tiny">mMinuscolo</a>
           <p>a class="button tiny"</p>
         </div>
         <div class="small-6 columns">
-          <a href="#" class="button small">Small Button</a>
+          <a href="#" class="button small">Piccolo</a>
           <p>a class="button small"</p>
         </div>
 
 
         <div class="small-6 columns">
-          <a href="#" class="button">Default Button</a>
+          <a href="#" class="button">Normale</a>
           <p>a class="button"</p>
         </div>
         <div class="small-6 columns">
-          <a href="#" class="button large">Large Button</a>
+          <a href="#" class="button large">Largo</a>
           <p>a class="button large"</p>
         </div>
 
 
         <div class="small-12 columns">
-          <a href="#" class="button expand">Expanded Button</a>
+          <a href="#" class="button expand">A tutta larghezza</a>
           <p>a class="button expand"</p>
         </div>
 
@@ -293,11 +320,11 @@
           <p>a class="button success"</p>
         </div>
         <div class="small-6 columns">
-          <a href="#" class="button disabled">Disabled Button</a>
+          <a href="#" class="button disabled">Tasto inattivo</a>
           <p>a class="button disabled"</p>
         </div>
         <div class="small-6 columns">
-          <a href="#" class="button secondary">Secondary Button</a>
+          <a href="#" class="button secondary">Tasto secondario</a>
           <p>a class="button secondary"</p>
         </div>
 
@@ -314,7 +341,7 @@
       </div>
       <!--Button groups-->
         <div class="small-12 medium-6 large-6 columns">
-        <h4>Button Groups</h4>
+        <h4>Gruppo di tasti</h4>
           <div class="small-12  columns sub-content">
             
             <ul class="button-group">
@@ -332,7 +359,7 @@
             </ul>
           </div>
           <div class="clear">
-            <h4>Button Bars</h4>
+            <h4>Barra di tasti</h4>
           </div>
           <div class="small-12  columns sub-content">
             
@@ -362,7 +389,7 @@
         </div>
    <!--split buttons-->
         <div class="small-12 medium-6 large-6 columns">
-         <h4>Split Buttons</h4>
+         <h4>Tasti con dropdown a lato</h4>
           <div class="small-12 columns sub-content">
            
             <a href="#" class="button split">Split Button <span data-dropdown="drop"></span></a>
@@ -425,7 +452,8 @@
     <div class="small-12 columns content textAlignPanel">
       <div class="medium-4 columns">
         <h4>Float Classes</h4>
-        <p>You can change the float behavior of an element by adding <code>.left</code> or <code>.right</code> to an HTML element. To clear floats, add the class <code>.clearfix</code> to the parent element.</p>
+        <label class="info">per rendere flottanti gli elementi utilizza le classi <code>.right</code> e <code>.left</code> . Per effettuare il clear dei float, utilizza la classe <code>.clearfix</code> sull'elemento contenitore.</label>
+        <br>
         <div class="clearfix">
           <a class="button right">Float Right</a>
           <a class="button left">Float Left</a>
@@ -441,7 +469,8 @@
       </div>
       <div class="medium-4 columns">
         <h4>Radius and Rounded</h4>
-        <p>The <code>.radius</code> and <code>.round</code> classes allow you to easily apply a border-radius to a UI-element. Adding the class to a button group will apply the border radius only to the outside corners.</p>
+        <label class="info">utilizza le classi <code>.radius</code> e <code>.round</code> per arrotondare gli angoli di un elemento.</label>
+        <br>
         <a href="#" class="button small round">Round Button</a>
         <a href="#" class="button small radius">Round Button</a>
         <ul class="no-bullet">
@@ -452,12 +481,14 @@
         </ul>
       </div>
       <div class="medium-4 columns">
-        <h4>Text Align Classes</h4>
-        <p>You can change the text alignment of an element by adding <code>.text-left</code>, <code>.text-right</code>, <code>.text-center</code> or <code>.text-justify</code> to an element.</p>
+        <h4>Allineamento del testo</h4>
+        <label class="info">utilizza le classi <code>.text-left</code> , <code>.text-right</code> , <code>.text-center</code> e <code>text-justify</code> modificare l'allineamento del testo.</label>
+        <br>
         <p class="text-left">This text is left aligned</p>
         <p class="text-right">This text is right aligned</p>
         <p class="text-center">This text is center aligned</p>
-        <a href="#" class="textClasses" data-reveal-id="textClasses">More text alignment classes</a>
+        <br>
+        <a href="#" class="textClasses" data-reveal-id="textClasses">vedi altre classi per il testo</a>
 
         <div id="textClasses" class="reveal-modal" data-reveal>
           <table style="width:100%;">
@@ -659,7 +690,9 @@
 
       </div>
       <div class="medium-12 large-8 columns forms">
-        <h4>Error States</h4>
+        <h4>Notifica Errori</h4>
+        <label class="info">da utilizzare insieme ad <a href="http://foundation.zurb.com/docs/components/abide.html">Abide js</a></label>
+        <br>
         <div class="row">
           <div class="small-12 medium-6 columns">
             <input type="text" class="error" />
@@ -712,62 +745,65 @@
     <!--Typography-->
   <div class="row">
     <div class="small-12 columns">
-      <h3>Typography</h3>
+      <h3>Tipografia</h3>
     </div>
     <div class="small-12 columns content typography-panel">
       <div class="medium-4 large-3 columns typography">
-        <h4 class="block">Headers</h4>
+        <h4 class="block">Titoli</h4>
+        <code>h1</code>
+        <br>
         <h1><span>h1.</span></h1>
         <h2><span>h2.</span></h2>
         <h3 class="defaultH3"><span>h3.</span></h3>
         <h4 class="defaultH4"><span>h4.</span></h4>
         <h5><span>h5.</span></h5>
         <h6><span>h6.</span></h6>
-        <h4 class="block">Sub Headers</h4>
+        <h4 class="block">Sottotitoli</h4>
+        <code>.subheader</code>
+        <br>
         <h1 class="subheader"><span>h1.</span></h1>
         <h2 class="subheader"><span>h2.</span></h2>
         <h3 class="subheader defaultH3"><span>h3.</span></h3>
         <h4 class="subheader defaultH4"><span>h4.</span></h4>
         <h5 class="subheader"><span>h5.</span></h5>
         <h6 class="subheader"><span>h6.</span></h6>
-        <h4 class="block heading">Small Header Segments</h4>
-        <h1><small>h1.</small></h1>
-        <h2><small>h2.</small></h2>
-        <h3 class="defaultH3"><small>h3.</small></h3>
-        <h4 class="defaultH4"><small>h4.</small></h4>
-        <h5><small>h5.</small></h5>
-        <h6><small>h6</small></h6>
+
       </div>
       <div class="medium-4 large-3 columns">
-        <h4>List items</h4>
+        <h4>Liste</h4>
         <ul class="no-bullet">
           <li>Unordered list</li>
           <ul class="circle">
-            <li><span data-tooltip class="has-tip" title="ul with class='circle'">circle as bullet -div class="circle"</span>
+            <li><span data-tooltip class="has-tip" title="ul with class='circle'"> class="circle"</span>
             </li>
           </ul>
           <ul class="disc">
-            <li><span data-tooltip class="has-tip" title="ul with class='disc'">disc as bullet -div class="disc"</span>
+            <li><span data-tooltip class="has-tip" title="ul with class='disc'"> class="disc"</span>
             </li>
           </ul>
           <ul class="square">
-            <li><span data-tooltip class="has-tip" title="ul with class='square'">sqaure as bullet -div class="square"</span>
+            <li><span data-tooltip class="has-tip" title="ul with class='square'"> class="square"</span>
             </li>
           </ul>
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="ul with class='no-bullet'">no bullet -div class="no-bullet"</span>
+            <li><span data-tooltip class="has-tip" title="ul with class='no-bullet'"> class="no-bullet"</span>
             </li>
           </ul>
         </ul>
         </ul>
         <ul class="no-bullet">
+          <br>
           <li>Ordered list</li>
           <ol>
-            <li><span data-tooltip class="has-tip" title="typical ol">this is an ordered list</span>
+            <li><span data-tooltip class="has-tip" title="typical ol">primo</span>
+            </li>
+            <li><span data-tooltip class="has-tip" title="typical ol">secondo</span>
+            </li>
+            <li><span data-tooltip class="has-tip" title="typical ol">terzo</span>
             </li>
           </ol>
         </ul>
-        <h4>keystroke</h4>
+        <h4>Codice</h4>
         <p>For example, to close your browser hit <kbd>Cmd</kbd>+<kbd>Q</kbd>
           <pre><code class="language-html keystroke-code"><div class="code-container"><span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Cmd<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span>+<span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Q<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></div></code></pre>
         </p>
@@ -804,13 +840,12 @@
 
       <div class="medium-4 large-3 clearMedium columns">
         <div class="small-12 columns">
-          <h4>Blockquotes</h4>
-          <p>blockquote QUOTE cite AUTHOR /cite /blockquote</p>
+          <h4>Citazioni</h4>
           <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite>
-            </blockq uote>
+            </blockquote>
         </div>
         <div class="small-12 columns">
-          <h4>Description List</h4>
+          <h4>Liste descrittive</h4>
           <span data-tooltip class="has-tip" title="Definition list tags">dl..dt..dd</span>
           <dl>
             <dt>Definition Title</dt>
@@ -868,11 +903,11 @@
     <!--Navigation-->
   <div class="row">
     <div class="small-12 columns">
-      <h3>Navigation</h3>
+      <h3>Navigazione</h3>
     </div>
     <div class="small-12 columns content">
       <div class="medium-6 large-3 columns">
-        <h4>Pagnition</h4>
+        <h4>Paginazione</h4>
         <ul class="pagination">
           <li class="arrow unavailable"><a href="">&laquo;</a>
           </li>
@@ -948,7 +983,8 @@
             <label>Like</label>
           </a>
         </div>
-        <p>Specifying the number of items <code>one-up</code> through <code>six-up</code> will ensure the items are evenly spaced.</p>
+        <label class="info">utilizza la classe <code>.icon-bar</code> per creare la icon bar e le classi come <code>.five-up</code> per indicare il numero di elementi</label>
+        <br>
         <ul class="no-bullet">
           <li><span data-tooltip class="has-tip" title="Splits icon bar into 5 even columns">div class="icon-bar five-up"</span>
           </li>
@@ -1013,6 +1049,8 @@
       </div>
       <div class="medium-6 large-4 columns">
         <h4>Top-Bar</h4>
+        <label class="info"> consultare <a href="http://foundation.zurb.com/docs/components/topbar.html">Top-bar</a></label>
+        <br>
         <nav class="top-bar hide-for-print">
           <ul class="title-area">
             <li class="name"></li>
@@ -1093,8 +1131,11 @@
         </div>
       <div class="clear">    
       <h4>Clearing Lightbox</h4>
+      <label class="info"> consultare <a href="http://foundation.zurb.com/docs/components/clearing.html">Top-bar</a></label>
+        <br>
       </div>
         <div class="small-12 columns">
+
          <ul class="clearing-thumbs" data-clearing>
             <li>
               <a class="th" href="img/comet.jpg">
@@ -1354,12 +1395,10 @@
   </div>
   <!--Footer-->
   <div class="footer fullwidth text-center">
-    <h4>Cheat sheet created by Sudheer</h4>
   </div>
   
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
-  <script src="js/foundation/foundation.clearing.js"></script>
   
   <script>
     $(document).foundation();

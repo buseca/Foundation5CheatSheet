@@ -16,7 +16,7 @@
  }
  .cover {
   height: 11rem;
-  background: #2ba6cb;
+  background: lightgreen;
  }
  .cover img:not(.git) {
   display: block;
@@ -47,8 +47,9 @@
   color: #fff;
  }
  h3:not(.defaultH3) {
-  font-family: 'RosarioRegular';
-  margin: 1.2rem 0rem 1rem 0rem;
+  font-family: 'georgia';
+  margin: 2rem 0rem 1rem 0rem;
+  color: #2d4a2d;
  }
  .clear {
   clear: both;
@@ -116,7 +117,7 @@
   margin: 0px;
  }
  .footer {
-  background: #2ba6cb;
+  background: lightgreen;
   height: 5rem;
   margin-top: 2rem;
  }
@@ -154,11 +155,13 @@
   margin-top: 0.3rem;
  }
  .content h4:not(.defaultH4) {
-  font-family: "BebasNeueBold";
-  background: #2ba6cb;
+  font-family: "georgia";
+  background: lightgreen;
   padding-left: 1em;
   margin-bottom: 1em;
-  color: #fff;
+  color: rgba(0,0,0,0.7);
+  font-size: 18px;
+  font-weight: normal;
  }
  .typography-panel ul {
   margin-bottom: 0px;
@@ -219,6 +222,9 @@
  .reveal-modal + ul {
   margin-top: 1em;
  }
+ label.info { color: #888888;}
+ .clearer { clear: both;}
+
  @font-face {
   font-family: 'GloberSemiBoldFree';
   src: url('../fonts/globersemiboldfree.eot');
